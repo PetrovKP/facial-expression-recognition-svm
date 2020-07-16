@@ -34,6 +34,7 @@ def train(epochs=HYPERPARAMS.epochs, random_state=HYPERPARAMS.random_state,
             print( "gamma: {} ".format(gamma))
             print( "--")
             print( "Training samples: {}".format(len(data['Y'])))
+            print( "Features: {}".format(data['X'].shape[1]))
             print( "Validation samples: {}".format(len(validation['Y'])))
             print( "--")
             start_time = time.time()

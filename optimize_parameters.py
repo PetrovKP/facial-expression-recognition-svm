@@ -9,8 +9,8 @@ from parameters import HYPERPARAMS
 
 # define the search space
 fspace = {
-    'decision_function': hp.choice('decision_function', ['ovr', 'ovo']),
-    'gamma':  hp.uniform('gamma', 0.001, 0.0001),
+    'decision_function': hp.choice('decision_function', ['ovo']),
+    'gamma':  hp.uniform('gamma', 0.0001, 0.001),
 }
 
 # parse arguments
